@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/home/neto/Documentos/Ciencia de dados/4_SEMESTRE/Desenvolvimento_Front_End_Com_Python/Alcebiades_Neto_DR1_TP3/dr1_tp3/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from streamlit.web.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
